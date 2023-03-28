@@ -7,4 +7,4 @@ A damn simple node based chat app inspired by [cursor](https://github.com/getcur
 node index.js "{whatever you want to say}"
 ```
 result:
-![](asset/screen.png)
+![](assets/screen.png)

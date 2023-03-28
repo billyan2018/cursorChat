@@ -35,7 +35,6 @@ function addChat(message, callback) {
     contextType: 'copilot',
     rootPath: '/Desktop/temp',
     userMessages: [],
-    botMessages: [],
     userRequest: {
       precedingCode: [''],
       suffixCode: [''],
@@ -51,14 +50,12 @@ function addChat(message, callback) {
 
   fetch(`${API_ROOT}/conversation`, {
     method: 'POST',
-    mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
       'accept': '*/*',
       authority: 'aicursor.com',
       referer: 'http://localhost:3000/',
       'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cursor/0.1.7 Chrome/108.0.5359.62 Electron/22.0.0 Safari/537.36',
-      // Cookie: `repo_path=${state.global.rootPath}`,
     },
     'content-type': "application/json",
     //credentials: 'include',
@@ -69,7 +66,7 @@ function addChat(message, callback) {
 
   });
 }
-console.log('loaded');
+
 // node
 
 const args = process.argv.slice(2);
