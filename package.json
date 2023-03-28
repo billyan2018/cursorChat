@@ -1,0 +1,15 @@
+{
+  "name": "cursorchat",
+  "version": "1.0.0",
+  "description": "A damn simple node based chat app inspired by [cursor](https://github.com/getcursor/cursor)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cursor",
+    "gpt"
+  ],
+  "author": "",
+  "license": "MIT"
+}
