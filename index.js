@@ -29,7 +29,7 @@ const API_ROOT = 'https://aicursor.com';
 
 const decoder = new TextDecoder('utf-8');
 
-function addChat(message, callback) {
+function chat(message, callback) {
   const data = {
     botMessages: [],
     contextType: 'copilot',
@@ -71,7 +71,7 @@ function addChat(message, callback) {
 
 const args = process.argv.slice(2);
 console.log(args);
-addChat(args.join(' '), (line) => {
+chat(args.join(' '), (line) => {
   process.stdout.write(line);
 });
 
